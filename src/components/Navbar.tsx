@@ -4,15 +4,15 @@ import Menu from "./Menu";
 import { ShoppingBag } from "lucide-react";
 import SearchBar from "./SearchBar";
 import NavIcons from "./NavIcons";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
     <div className="h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative">
       {/* MOBILE */}
       <div className="h-full flex justify-between items-center md:hidden">
-        <Link href="/" className="flex items-center gap-2">
-          <ShoppingBag color="#ffedb5" strokeWidth={2} />
-          <div className="text-2xl font-medium tracking-wide">MOOD</div>
+        <Link href="/">
+          <Logo />
         </Link>
         <Menu />
       </div>
@@ -21,10 +21,7 @@ const Navbar = () => {
       <div className="hidden md:flex items-center justify-between gap-8 h-full">
         {/* LEFT */}
         <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
-          <Link href="/" className="flex items-center justfy-center gap-3 ">
-            <ShoppingBag color="#ffedb5" strokeWidth={2} className="" />
-            <div className="text-2xl font-medium tracking-wide">MOOD</div>
-          </Link>
+          <Logo />
           <div className="hidden xl:flex gap-4">
             <Link href="/">Homepage</Link>
             <Link href="/shop">Shop</Link>

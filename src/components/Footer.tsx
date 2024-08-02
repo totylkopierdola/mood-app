@@ -1,12 +1,7 @@
-import {
-  Facebook,
-  Instagram,
-  ShoppingBag,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
@@ -16,7 +11,9 @@ const Footer = () => {
         {/* LEFT */}
         <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
           <Link href="/" className="flex items-center justfy-center gap-3 ">
-            <div className="text-2xl font-medium tracking-wide">MOOD</div>
+            <div className="tracking-wide">
+              <Logo />
+            </div>
           </Link>
           <p>Staszica 398/102A, Gdańsk, Poland</p>
           <span className="font-semibold">kudraj.mateusz@gmail.com</span>
