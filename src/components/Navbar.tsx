@@ -11,8 +11,8 @@ const Navbar = () => {
       {/* MOBILE */}
       <div className="h-full flex justify-between items-center md:hidden">
         <Link href="/" className="flex items-center gap-2">
-          <ShoppingBag color="#00b7ff" strokeWidth={2} />
-          <div className="text-2xl tracking-wide">MOOD</div>
+          <ShoppingBag color="#ffedb5" strokeWidth={2} />
+          <div className="text-2xl font-medium tracking-wide">MOOD</div>
         </Link>
         <Menu />
       </div>
@@ -21,16 +21,16 @@ const Navbar = () => {
       <div className="hidden md:flex items-center justify-between gap-8 h-full">
         {/* LEFT */}
         <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
-          <Link href="/" className="flex items-center gap-3">
-            <ShoppingBag color="#007BFF" strokeWidth={2} />
-            <div className="text-2xl tracking-wide">MOOD</div>
+          <Link href="/" className="flex items-center justfy-center gap-3 ">
+            <ShoppingBag color="#ffedb5" strokeWidth={2} className="" />
+            <div className="text-2xl font-medium tracking-wide">MOOD</div>
           </Link>
           <div className="hidden xl:flex gap-4">
             <Link href="/">Homepage</Link>
-            <Link href="/">Shop</Link>
-            <Link href="/">Deals</Link>
-            <Link href="/">About</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/shop">Shop</Link>
+            <Link href="/deals">Deals</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
           </div>
         </div>
         {/* RIGHT */}

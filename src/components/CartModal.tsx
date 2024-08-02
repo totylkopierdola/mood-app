@@ -1,6 +1,7 @@
 "use client";
 
 import { FileImage } from "lucide-react";
+import Image from "next/image";
 
 const CartModal = () => {
   // TEMPORARY
@@ -20,7 +21,13 @@ const CartModal = () => {
             {/* ITEM */}
             <div className="flex gap-4">
               {/* temp image */}
-              <FileImage size={100} />
+              <Image
+                src="https://static.wixstatic.com/media/22e53e_a4d10347d8284fe091f329d81273226a~mv2.jpg/v1/fill/w_340,h_340,al_c,q_80,usm_0.66_1.00_0.01/22e53e_a4d10347d8284fe091f329d81273226a~mv2.webp"
+                alt=""
+                width={72}
+                height={96}
+                className="object-cover rounded-md"
+              />
               <div className="flex flex-col justify-between w-full">
                 {/* TOP */}
                 <div className="">
