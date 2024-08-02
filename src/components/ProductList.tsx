@@ -5,7 +5,7 @@ const ProductList = () => {
   return (
     <div className="mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap">
       <Link
-        href={"/"}
+        href={"/1"}
         className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]"
       >
         <div className="relative w-full h-80">
@@ -29,8 +29,8 @@ const ProductList = () => {
           />
         </div>
         <div className="flex justify-between">
-          <span className="font-medium">{`product.name`}</span>
-          <span className="font-semibold">${`product.price?.price`}</span>
+          <span className="font-medium">Product name</span>
+          <span className="font-semibold">$33.29</span>
         </div>
         <div className="text-sm text-gray-500"></div>
         <button className="rounded-2xl ring-1 ring-black text-black w-max py-2 px-4 text-xs hover:bg-black hover:text-white">
@@ -62,8 +62,8 @@ const ProductList = () => {
           />
         </div>
         <div className="flex justify-between">
-          <span className="font-medium">{`product.name`}</span>
-          <span className="font-semibold">${`product.price?.price`}</span>
+          <span className="font-medium">Product name</span>
+          <span className="font-semibold">$69.99</span>
         </div>
         <div className="text-sm text-gray-500"></div>
         <button className="rounded-2xl ring-1 ring-black text-black w-max py-2 px-4 text-xs hover:bg-black hover:text-white">
@@ -95,8 +95,8 @@ const ProductList = () => {
           />
         </div>
         <div className="flex justify-between">
-          <span className="font-medium">{`product.name`}</span>
-          <span className="font-semibold">${`product.price?.price`}</span>
+          <span className="font-medium">Product name</span>
+          <span className="font-semibold">$9.99</span>
         </div>
         <div className="text-sm text-gray-500"></div>
         <button className="rounded-2xl ring-1 ring-black text-black w-max py-2 px-4 text-xs hover:bg-black hover:text-white">
@@ -128,8 +128,8 @@ const ProductList = () => {
           />
         </div>
         <div className="flex justify-between">
-          <span className="font-medium">{`product.name`}</span>
-          <span className="font-semibold">${`product.price?.price`}</span>
+          <span className="font-medium">Product name</span>
+          <span className="font-semibold">$15.99</span>
         </div>
         <div className="text-sm text-gray-500"></div>
         <button className="rounded-2xl ring-1 ring-black text-black w-max py-2 px-4 text-xs hover:bg-black hover:text-white">

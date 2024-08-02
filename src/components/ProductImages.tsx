@@ -48,7 +48,11 @@ const ProductImages = () => {
               alt=""
               fill
               sizes="30vw"
-              className="object-cover rounded-md"
+              className={`object-cover rounded-md ${
+                index === i
+                  ? "border-4 border-black border-opacity-20 ring-black"
+                  : ""
+              }`}
             />
           </div>
         ))}

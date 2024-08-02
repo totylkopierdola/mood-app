@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Bell, ShoppingCart, User } from "lucide-react";
 import { useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import CartModal from "./CartModal";
 
 const NavIcons = () => {
@@ -13,10 +12,6 @@ const NavIcons = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const router = useRouter();
-  const pathName = usePathname();
-
-  // const wixClient = useWixClient();
-  // const isLoggedIn = wixClient.auth.loggedIn();
 
   // TEMPORARY
   const isLoggedIn = false;

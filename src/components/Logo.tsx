@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Logo = () => {
   return (
-    <span className="flex items-center">
+    <span className="flex items-center transition-all hover:scale-110 gap-1">
       <Image
         src="/logo-mood.png"
         alt="logo"
